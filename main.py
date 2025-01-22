@@ -107,3 +107,74 @@ print(customer_one_total)
 
 
 likes_snakes = input("Do you like snakes? ")
+
+# Practice for projects:
+
+1 == 1     # Evaluates to True as the operands are the same 
+
+1 != 1     # Evaluates to False as the operands are the same 
+# the not makes it the opposite answer.
+
+2 != 4     # Evaluates to True as the operands are different 
+
+3 == 5     # Evaluates to False as the operands are different
+ 
+'7' == 7   # Evaluates to False as the operands are different types 
+# One side is a string, while other side is not!
+
+#if is_raining:
+  #print("bring an umbrella")
+
+#if age <= 13:
+  #print("Sorry, parental control required")
+
+#  Boolean expressions for (and) ( if one is true in the statement and the other is false it is false)
+(1 + 1 == 2) and (2 + 2 == 4)   # True
+
+(1 > 9) and (5 != 6)            # False
+
+(1 + 1 == 2) and (2 < 1)        # False
+
+(0 == 10) and (1 + 1 == 1)      # False
+
+# OR (or) statements if one is true and other is false, it wil be true, if both are false it's false, and both true is true.
+True or (3 + 4 == 7)    # True
+(1 - 1 == 0) or False   # True
+(2 < 0) or True         # True
+(3 == 8) or (3 > 4)     # False
+
+# The not operator is used for boolean expressions (will keep the inverse t to f vise verse)
+
+# Keep not in each variable:
+
+statement_one = not (4 + 5 <= 9)
+
+
+statement_two = not (8 * 2) != 20 - 4
+
+
+credits = 120
+gpa = 1.8
+
+if  not (credits >= 120):
+  print("You do not have enough credits to graduate.")
+
+if not(gpa >= 2.0):
+  print("Your GPA is not high enough to graduate.")
+
+if not (credits >= 120) and not (gpa >= 2.0):
+  print("You do not meet either requirement to graduate!")
+
+
+grade = 86
+if grade >= 90:
+  print("A")
+elif grade >= 80:
+  print("B")
+elif grade >= 70:
+  print("C")
+elif(grade >=60):
+  print("D")
+else:
+  print("F")
+
