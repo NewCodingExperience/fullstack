@@ -156,7 +156,7 @@ statement_two = not (8 * 2) != 20 - 4
 credits = 120
 gpa = 1.8
 
-if  not (credits >= 120):
+if  (credits >= 120):
   print("You do not have enough credits to graduate.")
 
 if not(gpa >= 2.0):
@@ -214,3 +214,114 @@ def generate_trip_instructions(location):
     print("You can use the public subway system to get to " + location)
 generate_trip_instructions("Central Park")
 generate_trip_instructions("Grand Central Station")
+
+# calculate_taxi_price(rate=0.5, discount=10, miles_to_travel=100)
+
+destination_name = "Venkatanarasimharajuvaripeta"
+
+# Built-in function: len()
+# finds the length of it.
+length_of_destination = len(destination_name)
+
+# Built-in function: print()
+print(length_of_destination)
+
+# this will make the code run effectively with max, min,
+tshirt_price = 9.75
+shorts_price = 15.50
+mug_price = 5.99
+poster_price = 2.00
+
+# Write your code below:
+max_price=max(tshirt_price,shorts_price,mug_price,poster_price)
+print(max_price)
+min_price=min(tshirt_price,shorts_price,mug_price,poster_price)
+print(min_price)
+
+# depends on the index and will determine where to round it
+rounded_price=round(tshirt_price,2)
+print(rounded_price)
+
+
+# scope of the issue, just make the program work outside of it:
+# This function will print a hardcoded count of how many locations we have.
+favorite_locations = "Paris, Norway, Iceland"
+
+def print_count_locations():
+  favorite_locations = "Paris, Norway, Iceland"
+  print("There are 3 locations")
+    
+# This function will print the favorite locations
+def show_favorite_locations():
+  print("Your favorite locations are: " + favorite_locations())
+
+#print_count_locations()
+#show_favorite_locations()
+
+# calls the method effectively:
+def calculate_exchange_usd(us_dollars, exchange_rate):
+  return us_dollars * exchange_rate
+
+new_zealand_exchange = calculate_exchange_usd(100, 1.4)
+
+print("100 dollars in US currency would give you " + str(new_zealand_exchange) + " New Zealand dollars")
+
+# since it's the same type and same
+def top_tourist_locations_italy():
+  first = "Rome"
+  second = "Venice"
+  third = "Florence"
+  return first, second, third
+
+most_popular1, most_popular2, most_popular3=top_tourist_locations_italy()
+print(most_popular1)
+print(most_popular2)
+print(most_popular3)
+
+# here id a fully coded python physics project L1:
+# Uncomment this when you reach the "Use the Force" section
+train_mass = 22680
+train_acceleration = 10
+train_distance = 100
+bomb_mass = 1
+
+
+# Write your code below: 
+def f_to_c(f_temp):
+  c_temp=(f_temp-32)*5/9
+  return c_temp
+
+f100_in_celsius=f_to_c(100)
+#print(f100_in_celsius)
+
+def c_to_f(c_temp):
+  f_temp=c_temp*(9/5) + 32
+  return f_temp
+c0_in_fahrenheit=c_to_f(0)
+#print(c0_in_fahrenheit)
+
+def get_force(mass,acceleration):
+  return mass * acceleration
+train_force=get_force(train_mass,train_acceleration)
+#print(train_force)
+#print("The GE train supplies" + " " + str(train_force) + " " + "Newtons of force")
+
+
+def get_energy(mass,c=3*10**8):
+  return mass * c**2
+
+bomb_energy=get_energy(bomb_mass)
+print("A 1kg bomb supplies" + str(bomb_energy) + "Joules")
+
+def get_work(mass,acceleration,distance):
+  return get_force(mass,acceleration) * distance
+
+train_work=get_work(train_mass,train_acceleration,train_distance)
+print(train_work)
+
+print("The GE train does" + str(train_work) + "Joules of work over" + str(train_distance) + "meters")
+
+
+
+
+
