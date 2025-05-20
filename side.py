@@ -1,4 +1,5 @@
-# this is the functions from Codecademy
+# this is the functions from Codecademy: Build Python Web Apps with Flask and I relearned Python and learned 
+# loops, lists, dictionaries!
 # 5/13/2025
 
 # functions are being listed:
@@ -304,6 +305,7 @@ person = {"name": "Shuri", "age": 18, "family": ["T'Chaka", "Ramonda"]}
 # this a  unhashable list:
 powers = {[1, 2, 4, 8, 16]: 2, [1, 3, 9, 27, 81]: 3}
 #--- If the key can change, that hash value would not be reliable.
+# this is the end of the content and the journal for the AP project
 
 
 
